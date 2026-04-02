@@ -42,8 +42,8 @@ const CODE_USE_BOARD = `// useBoard 훅 내부에서 역할별 분기를 일괄 
 const isRegist = ['SELLERS', 'COMPANY_A', 'COMPANY_B',...].includes(companyType);
 const isHowser = companyType === 'HOWSER';
 // UI 컴포넌트에서는 결과값만 참조
-// {isRegist && <Button>문의하기</Button>}
-// {isHowser && <CompanySearch />}`;
+{isRegist && <Button>문의하기</Button>}
+{isHowser && <CompanySearch />}`;
 
 const CODE_QUERY_KEY = `// Before
 ['queries']
@@ -291,7 +291,7 @@ export default function Home() {
                       노출 여부를 한 곳에서 일괄 결정하고, UI 컴포넌트는 결과값만 의존하도록
                       구성했습니다.
                     </p>
-                    <CodeBlock code={CODE_USE_BOARD} language="typescript" />
+                    <CodeBlock code={CODE_USE_BOARD} language="tsx" />
                   </div>
                   <p className="mt-2">
                     역할별 분기 조건이 훅 내부에 집중되어, 역할이 추가되거나 노출 조건이
