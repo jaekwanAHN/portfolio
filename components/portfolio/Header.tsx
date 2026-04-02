@@ -7,7 +7,7 @@ const PROFILE_LINKS = {
 
 export function Header() {
   return (
-    <header className="break-inside-avoid border-b border-zinc-200 pb-6 print:border-zinc-300">
+    <header className="print-doc-header print-avoid-break border-b border-zinc-200 pb-6 print:border-zinc-300 print:pb-4">
       <p className="text-sm text-zinc-500 print:text-zinc-600">포트폴리오</p>
       <h1 className="mt-1 text-2xl font-semibold tracking-tight text-zinc-900 print:text-black">
         안재관

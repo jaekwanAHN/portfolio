@@ -13,7 +13,7 @@ export async function CodeBlock({ code, language }: CodeBlockProps) {
   });
 
   return (
-    <figure className="relative my-5 break-inside-avoid rounded-lg border border-zinc-200 bg-zinc-950 print:border-zinc-300">
+    <figure className="print-code-block relative my-5 rounded-lg border border-zinc-200 bg-zinc-950 print:my-0 print:border-zinc-300">
       <figcaption className="flex items-center justify-between border-b border-white/10 px-3 py-2 text-xs font-medium text-zinc-400">
         <span className="font-mono">{language}</span>
       </figcaption>
