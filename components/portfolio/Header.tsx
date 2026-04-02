@@ -3,6 +3,8 @@ const PROFILE_LINKS = {
   email: "mailto:ggstork@gmail.com",
   githubLabel: "GitHub",
   githubHref: "https://github.com/jaekwanAHN",
+  resumeLabel: "이력서",
+  resumeHref: "https://ajk-resume.vercel.app/",
 } as const;
 
 export function Header() {
@@ -36,6 +38,19 @@ export function Header() {
             rel="noopener noreferrer"
           >
             {PROFILE_LINKS.githubHref.replace(/^https?:\/\//, "")}
+          </a>
+        </li>
+        <li>
+          <span className="text-zinc-500 print:text-zinc-600">
+            {PROFILE_LINKS.resumeLabel}
+          </span>{" "}
+          <a
+            className="underline decoration-zinc-300 underline-offset-2 print:text-black"
+            href={PROFILE_LINKS.resumeHref}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ajk-resume.vercel.app
           </a>
         </li>
       </ul>
