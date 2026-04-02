@@ -1,8 +1,8 @@
 /** 배포 전 본인 연락처·URL로 수정하세요. (원본 PDF에 항목 없음) */
 const PROFILE_LINKS = {
-  email: "mailto:",
+  email: "mailto:ggstork@gmail.com",
   githubLabel: "GitHub",
-  githubHref: "https://github.com/",
+  githubHref: "https://github.com/jaekwanAHN",
 } as const;
 
 export function Header() {
@@ -22,7 +22,7 @@ export function Header() {
             className="underline decoration-zinc-300 underline-offset-2 print:text-black"
             href={PROFILE_LINKS.email}
           >
-            이메일
+            ggstork@gmail.com
           </a>
         </li>
         <li>
